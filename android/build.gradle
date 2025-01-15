@@ -99,8 +99,11 @@ android {
 }
 
 repositories {
-  mavenCentral()
-  google()
+    google()
+    mavenCentral()
+    maven {
+        url 'https://cdn-dev-intg-2.securiti.xyz/consent/maven'
+    }
 }
 
 def kotlin_version = getExtOrDefault("kotlinVersion")
@@ -111,6 +114,7 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation 'ai.securiti.cmpsdkcore:consent-sdk:1.126.0'
 }
 
 if (isNewArchitectureEnabled()) {

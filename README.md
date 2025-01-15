@@ -10,7 +10,6 @@ npm install consent-sdk
 
 ## Usage
 
-
 ```js
 import { multiply } from 'consent-sdk';
 
@@ -18,7 +17,6 @@ import { multiply } from 'consent-sdk';
 
 const result = multiply(3, 7);
 ```
-
 
 ## Contributing
 
