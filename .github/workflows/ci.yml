@@ -107,6 +107,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      - name: Clean and build Android project
+        run: ./gradlew clean build
+
       - name: Build example for Android
         env:
           JAVA_OPTS: '-XX:MaxHeapSize=6g'
