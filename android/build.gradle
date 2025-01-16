@@ -5,6 +5,9 @@ buildscript {
   repositories {
     google()
     mavenCentral()
+    maven {
+        url 'https://cdn-dev-intg-2.securiti.xyz/consent/maven'
+    }
   }
 
   dependencies {
