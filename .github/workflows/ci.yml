@@ -108,7 +108,7 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Clean and build Android project
-        run: ./gradlew clean build
+        run: cd example/android && ./gradlew clean build
 
       - name: Build example for Android
         env:
